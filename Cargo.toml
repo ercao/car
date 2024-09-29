@@ -1,0 +1,11 @@
+[workspace.package]
+authors = ["ercao"]
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+  "./car-utils",            #
+  "./car-server",
+  "./car-client/src-tauri",
+]

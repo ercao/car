@@ -1,0 +1,12 @@
+{
+  "name": "car",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "ercao",
+  "license": "MIT",
+  "scripts": {
+    "dev:client": "cd car-client && pnpm run tauri dev --no-watch",
+    "build:server:host": "cargo build --package=car-server",
+    "build:server:target": "cross build --target=armv7-unknown-linux-gnueabihf --all-features --release --package=car-server"
+  }
+}

@@ -1,0 +1,13 @@
+# [target.armv7-unknown-linux-gnueabihf]
+# dockerfile = "./Dockerfile"
+
+[target.armv7-unknown-linux-gnueabihf]
+# image = ":edge"
+dockerfile = "./Dockerfile"
+
+
+# pre-build = [
+#   "dpkg --add-architecture $CROSS_DEB_ARCH",
+#   "apt-get update && apt-get install --assume-yes aptitude",
+#   "DEBIAN_FRONTEND=noninteractive aptitude --assume-yes install clang libclang-dev libopencv-dev:$CROSS_DEB_ARCH",
+# ]
